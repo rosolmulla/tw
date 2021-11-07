@@ -11,10 +11,9 @@ const Todolist = (props) => {
     const id = '61870155f4b54ecaee33fb3e'   
     const getPost =await getPosts(id)
     console.log(getPost)
+    setPosts(getPost)
     },[]);
-           // {posts.map((p) => (
-           //     <Post key={p.id} post={p} />
-           // ))}
+          
     return (
         <>
 

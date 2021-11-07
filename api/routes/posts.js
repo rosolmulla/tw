@@ -26,11 +26,10 @@ router.delete("/:id", async (req,res)=>{
     }
 });
 // get a post
-router.get(":userId", async (req,res,next)=>{
-    console.log(req.params)
-    const {userId} = req.params.userId;
+router.get("/:id", async (req,res,next)=>{
+    console.log('req',req.params)
     try{
-        const post = await Post.findById(userId);
+        const post = await Post.findById(req.params.id);
         if(!post) throw new Error('error while getting post')
         res.status(200).json(post);
     }catch(err){
