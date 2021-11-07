@@ -1,0 +1,39 @@
+.bottombarContainer{
+    height: 50px;
+    width: 100%;
+    background-color: darkolivegreen;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+}
+
+.bottombarLeft{
+    flex: 4;
+    align-items: center;
+}
+
+.food{
+    width: 70%;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bottombarCenter{
+    flex: 4;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bottombarRight{
+    flex: 4;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
